@@ -3,5 +3,5 @@
   "dest": "../../dist/pattern-fly-components",
   "lib": {
     "entryFile": "src/public-api.ts"
-  }
+  }  
 }

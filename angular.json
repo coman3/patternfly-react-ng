@@ -30,6 +30,7 @@
               "src/assets"
             ],
             "styles": [
+              "projects/pattern-fly-components/node_modules/@patternfly/react-styles/css/base/patternfly-variables.css", 
               "src/styles.css"
             ],
             "scripts": []

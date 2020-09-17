@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { ButtonModule } from './button/button.module';
+import { SwitchModule } from './switch/switch.module';
 
 
 
@@ -10,7 +11,8 @@ import { ButtonModule } from './button/button.module';
     CommonModule
   ],
   exports: [
-    ButtonModule
+    ButtonModule,
+    SwitchModule
   ]
 })
 export class CoreModule { }

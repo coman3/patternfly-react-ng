@@ -15,7 +15,6 @@ export class ReactBase {
   selector: 'pfc-button',
   template: '',
   styleUrls: [
-    "../../../../node_modules/@patternfly/react-styles/css/base/patternfly-variables.css",
     "../../../../node_modules/@patternfly/react-styles/css/components/Button/button.css"],
   encapsulation: ViewEncapsulation.None,
 
@@ -60,7 +59,7 @@ export class ButtonComponent  extends ReactBase implements OnInit, ButtonProps, 
     super(ref);
   }
   ngOnDestroy(): void {
-    throw new Error("Method not implemented.");
+    
   }
 
   ngOnInit(): void {

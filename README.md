@@ -1,27 +1,20 @@
-# PatternFly
+# PatternFly React Ng
+A hybrid approach to implementing PatternFly in Angular using the React DOM renderer.
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 10.0.7.
+> I wanted to use PatternFly as a UI framework but it had very little angular support... Angular is cool, react is okay, what happens if we force them to cooperate with each other? This repository demonstrates that.
 
-## Development server
+## Yea so, WHY?
+Well, i looked at the [official PatternFly ng](https://github.com/patternfly/patternfly-ng) implementation and realized its lacking a lot of the new features, and being a developer thought, how could this sync up with the [official PatternFly React](https://github.com/patternfly/patternfly-react) repository that is constantly updated instead of forcing the dev team to work on two separate repositories?
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+## But performance
+Yea yea yea, performance, we all want it.  I'll be honest this implementation does add at least 150kb to the angular bundle size simply because its using the react dom to render the components in the background. Its up to you if this is worth it, personally it is for me.
 
-## Code scaffolding
+When it comes down to render performance, there isn't really much of a difference, except that we are re-rendering each component every time a property changes using `ReactDOM.render()`... So, its potentially a problem, i haven't tested it yet.
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
 
-## Build
+# What needs doing
+ - [ ] Test performance of the react rendering
+ - [ ] Write wrappers for *every*, **single**, *f\*\*king*, *component*.
+ - [ ] Stateful components? Will it work?
+ - [ ] Confess my sins to the developer gods
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).

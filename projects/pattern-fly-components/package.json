@@ -1,0 +1,18 @@
+{
+  "name": "pattern-fly-components",
+  "version": "0.0.1",
+  "peerDependencies": {
+    "@angular/common": "^10.0.14",
+    "@angular/core": "^10.0.14"
+  },
+  "dependencies": {
+    "@patternfly/react-core": "^4.47.0",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1",
+    "tslib": "^2.0.0"
+  },
+  "devDependencies": {
+    "@types/react": "^16.9.49",
+    "@types/react-dom": "^16.9.8"
+  }
+}

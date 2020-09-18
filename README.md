@@ -1,4 +1,6 @@
 # PatternFly React Ng
+###### I want to make this as clear as possible, i do not recommend using this repository, its just a fun little experienment seeing if its possible to mash two of the most powerful UI Frameworks together. Turns out, it is.
+
 A hybrid approach to implementing PatternFly in Angular using the React DOM renderer.
 
 > I wanted to use PatternFly as a UI framework but it had very little angular support... Angular is cool, react is okay, what happens if we force them to cooperate with each other? This repository demonstrates that.
@@ -12,9 +14,10 @@ Yea yea yea, performance, we all want it.  I'll be honest this implementation do
 When it comes down to render performance, there isn't really much of a difference, except that we are re-rendering each component every time a property changes using `ReactDOM.render()`... So, its potentially a problem, i haven't tested it yet.
 
 
-# What needs doing
- - [ ] Test performance of the react rendering
+# What *might* need doing
+I'll also state here, that is is not going to happen, this repo is just a fun little experiment to demonstrate angular rendering react components 😊
+ - [x] Test performance of the react rendering (its exactly the same as how react does it, so pretty good here!)
  - [ ] Write wrappers for *every*, **single**, *f\*\*king*, *component*.
- - [ ] Stateful components? Will it work?
+ - [x] Stateful components? Will it work? (No, it will not)
  - [ ] Confess my sins to the developer gods
 
